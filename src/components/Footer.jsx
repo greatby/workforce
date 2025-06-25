@@ -73,9 +73,9 @@ export default function Footer() {
     <footer className="relative bg-[#011e3c] text-white">
       {/* Desktop wave background */}
       <img
-        src="/static/images/footer/footer_wave_desktop.svg"
+        src="https://windsurf.com/static/images/footer/footer_wave_desktop.svg"
         alt="Footer wave"
-        className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[2000px] h-[686px] pointer-events-none select-none"
+        className="hidden md:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[2000px] h-[350px] pointer-events-none select-none"
       />
 
       {/* Mobile wave background */}

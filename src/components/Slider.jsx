@@ -99,11 +99,12 @@ export default function ImageHighlightBlock({ slides }) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: direction > 0 ? -60 : 60 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="absolute inset-0 flex items-center justify-center p-4"
+              className="absolute inset-0 flex items-center justify-center p-4 will-change-transform"
             >
               <img
                 src={slides[index].image}
                 alt="Slide"
+                loading="eager"
                 className="w-full h-full object-cover rounded-md"
               />
             </motion.div>

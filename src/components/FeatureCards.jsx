@@ -8,7 +8,7 @@ const slides = [
     description:
       "If Cascade generates code that doesn’t pass a linter, it will fix the errors automatically.",
     image:
-      "https://images.pexels.com/photos/29789465/pexels-photo-29789465.jpeg",
+      "/images/pexels-photo-29789465.jpeg",
     icon: "/icons/linter.svg",
   },
   {
@@ -16,7 +16,7 @@ const slides = [
     description:
       "Enhance your AI workflows by connecting to custom tools and services.",
     image:
-      "https://images.pexels.com/photos/32079860/pexels-photo-32079860.jpeg",
+      "/images/pexels-photo-32079860.jpeg",
     icon: "/icons/mcp.svg",
   },
   {
@@ -24,13 +24,13 @@ const slides = [
     description:
       "Predicts the next location of your cursor to seamlessly navigate through the file.",
     image:
-      "https://images.pexels.com/photos/30824935/pexels-photo-30824935.jpeg",
+      "/images/pexels-photo-30824935.jpeg",
     icon: "/icons/tab.svg",
   },
   {
     title: "Supercomplete",
     description: "Supercomplete analyzes what your next action might be.",
-    image: "https://images.pexels.com/photos/29145098/pexels-photo-29145098.jpeg",
+    image: "/images/pexels-photo-29145098.jpeg",
     icon: "/icons/supercomplete.svg",
   },
 ];
@@ -89,6 +89,7 @@ export default function CardSlider() {
                     <img
                       src={slide.image}
                       alt={slide.title}
+                        loading="eager"
                       className="-mb-3 h-auto w-full object-cover"
                     />
                   </div>
