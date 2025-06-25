@@ -119,90 +119,7 @@ const testimonials = [
 
 ];
 
-// export default function CaseStudyTestimonials() {
-//   const scrollRef = useRef(null);
 
-//   const scroll = (dir) => {
-//     if (scrollRef.current) {
-//       scrollRef.current.scrollBy({
-//         left: dir === "left" ? -500 : 500,
-//         behavior: "smooth",
-//       });
-//     }
-//   };
-
-//   return (
-//     <section className="bg-white py-24 md:py-44">
-//       <div className="mx-auto max-w-7xl px-4">
-//         <div className="flex items-center justify-between mb-10">
-//           <h2 className="text-2xl font-semibold md:text-4xl">
-//             Case Study Testimonials
-//           </h2>
-//           <div className="hidden md:flex gap-4">
-//             <button
-//               onClick={() => scroll("left")}
-//               className="p-3 rounded-full text-cyan-700 hover:opacity-80 border"
-//             >
-//               <FaArrowLeftLong className="w-6 h-6" />
-//             </button>
-//             <button
-//               onClick={() => scroll("right")}
-//               className="p-3 rounded-full bg-cyan-700 text-white hover:opacity-90"
-//             >
-//               <FaArrowRightLong className="w-6 h-6" />
-//             </button>
-//           </div>
-//         </div>
-
-//         <div
-//           ref={scrollRef}
-//           className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-//         >
-//           {testimonials.map((t, i) => (
-//             <a
-//               key={i}
-//               href={t.link}
-//               target="_blank"
-//               className={`relative group shrink-0 snap-start rounded-md ${t.bg} w-[280px] sm:w-[340px] md:w-[480px] xl:w-[525px] h-[520px] md:h-[612px] p-6 md:p-14 overflow-hidden hover:scale-[.98] transition-transform`}
-//             >
-//               <div
-//                 className="absolute inset-0 bg-bottom bg-no-repeat bg-contain transition-opacity duration-700 group-hover:opacity-0"
-//                 style={{ backgroundImage: t.outline }}
-//               ></div>
-//               <div
-//                 className="absolute inset-0 bg-bottom bg-no-repeat bg-contain opacity-0 transition-opacity duration-1000 group-hover:opacity-100"
-//                 style={{ backgroundImage: t.gradient }}
-//               ></div>
-
-//               <div className="relative flex h-full flex-col justify-between z-10">
-//                 <p className="text-sm md:text-lg text-black leading-snug whitespace-pre-line">
-//                   {t.quote}
-//                 </p>
-//                 <div className="flex items-center gap-4 mt-6">
-//                   <div className="h-12 w-12 rounded-lg bg-white p-2">
-//                     <img
-//                       src={t.logo}
-//                       alt="logo"
-//                       className="object-contain h-full w-full"
-//                     />
-//                   </div>
-//                   <div className="flex flex-col">
-//                     <p className="font-medium text-black text-sm md:text-lg">
-//                       {t.name}
-//                     </p>
-//                     <p className="text-xs md:text-sm font-semibold text-black">
-//                       {t.role}
-//                     </p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </a>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 export default function CaseStudyTestimonials() {
   const scrollRef = useRef(null);
@@ -247,7 +164,7 @@ export default function CaseStudyTestimonials() {
               disabled={!canScrollLeft}
               className={`p-3 rounded-full border ${
                 canScrollLeft
-                  ? "text-cyan-700 hover:opacity-80"
+                  ? "bg-cyan-700 text-white hover:opacity-80"
                   : "opacity-30 text-gray-400 cursor-not-allowed"
               }`}
             >

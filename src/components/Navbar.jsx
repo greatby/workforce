@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
@@ -6,6 +6,7 @@ export default function WindsurfNav() {
   const [hoveredMenu, setHoveredMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expandedAccordion, setExpandedAccordion] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
     {
@@ -39,18 +40,25 @@ export default function WindsurfNav() {
     {
       label: "Company",
       dropdown: {
-        COMPANY: [
-          { label: "About Us" },
-          { label: "Careers" },
-         
-        ],
+        COMPANY: [{ label: "About Us" }, { label: "Careers" }],
       },
     },
   ];
 
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10); // adjust threshold if needed
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   return (
     <div
-      className="fixed w-full bg-[#f9f3e9] z-50"
+     className={`fixed w-full z-50 transition-colors duration-300 ${
+    scrolled ? "bg-[#f9f3e9] text-black" : "bg-transparent text-white"
+  }`}
       onMouseLeave={() => setHoveredMenu(null)}
     >
       <nav className="flex items-center justify-between px-6 py-4">
@@ -67,7 +75,9 @@ export default function WindsurfNav() {
                 {/* Nav Item Label */}
                 <a
                   href={link.href || "#"}
-                  className="flex items-center gap-1 px-2 py-1 text-sm font-semibold uppercase text-black"
+                  className={`flex items-center gap-1 px-2 py-1 text-sm font-semibold uppercase ${
+    scrolled ? "bg-[#f9f3e9] text-black" : "bg-transparent text-white"
+  }`}
                 >
                   {link.label}
                   {link.dropdown && (
@@ -83,7 +93,6 @@ export default function WindsurfNav() {
                   )}
                 </a>
 
-           
                 <AnimatePresence>
                   {hoveredMenu?.label === link.label && (
                     <motion.div
@@ -133,8 +142,8 @@ export default function WindsurfNav() {
         {/* Download (Desktop only) */}
         <a
           href="/download"
-          className="hidden lg:inline-block rounded px-4 py-2 text-sm font-semibold text-[#137A6C]"
-          style={{ backgroundColor: "#f9f3e9" }}
+          className={`hidden lg:inline-block rounded px-4 py-2 text-sm font-semibold text-[#137A6C]`}
+          style={{ backgroundColor: "transparent" }}
         ></a>
 
         {/* Mobile Toggle */}

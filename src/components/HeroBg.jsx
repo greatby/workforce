@@ -11,7 +11,7 @@ const WindsurfHeroBackground = () => (
       xmlns="http://www.w3.org/2000/svg"
       className="w-[4500px] h-auto max-w-none opacity-100"
     >
-      <g clip-path="url(#clip0_27413_564)">
+      <g clipPath="url(#clip0_27413_564)">
         <path
           d="M6136.63 1839.58C5083.05 1625.73 4409.33 1775.4 3948.58 1976.32C3506.05 2169.27 3031.24 2571.83 2602.85 2437.03C2463.5 2391.5 2312 2298 2168 2060.5C2118 1982 2081.5 1907 2053 1794.5C2006.5 1629.5 1983 1447.5 1980 1416.5L2084 1418.5C2087 1502.5 2091.5 1652.5 2140 1884C2159.48 1941.65 2186 1997.5 2223 2060C2359.22 2290.1 2478.5 2357.5 2595.39 2404.14C3036.19 2560.33 3513.59 2091.29 3949 1834.29C4400.08 1568.04 5124.73 1341.78 6306 1555.5V1886.5L6218 1861L6136.63 1839.58Z"
           fill="url(#paint0_radial_27413_564)"
@@ -47,106 +47,106 @@ const WindsurfHeroBackground = () => (
         <path
           d="M1825 2626C1877.38 2627.13 2146.04 2621.02 2378 2623.5C2514.85 2624.96 2638.6 2633.39 2698.5 2636.5C3035 2653 3483.97 2651.77 3946.5 2828C4252.5 2946.5 4446.5 3062.5 4656.5 3199.5C4788.78 3288.1 4922.9 3382.34 5080 3516.5C5144.14 3571.27 5174.73 3601.25 5235.5 3661.5C5294 3719.5 5327.5 3758.5 5376.5 3825.5"
           stroke="url(#paint9_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="-12.191999999999553"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="-12.191999999999553"
         ></path>
         <path
           d="M3946.66 2685.9C4354.37 2796.62 4648.5 2925.5 5016 3112.5C5102.95 3158 5201.55 3203.75 5297.74 3257.6C5645 3452 5832 3576.5 6138.5 3825.5M3946.64 2685.92C3472.53 2564.39 3003.15 2636.93 2640.16 2600.86C2472.86 2584.24 2406.14 2583.85 2260.73 2548.84C2085.81 2506.73 1829 2388 1829 2388"
           stroke="url(#paint10_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="12.16800000000012"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="12.16800000000012"
         ></path>
         <path
           d="M1824.5 2197 C1848 2231 1853 2236 1866 2249.5 C1879 2263 1989 2369.5 2260.45 2476.3 C2419.68 2531.5 2465.94 2542.76 2632.72 2566.97 C3009.05 2621.59 3479.32 2483.23 3947.08 2542.83 C4450.17 2606.92 4922.7 2758.39 5465.61 2972.82"
           stroke="url(#paint11_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="-12.16800000000012"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="-12.16800000000012"
         ></path>
         <path
           d="M1825.5 1971.5C1865 2055.5 1905.33 2112.38 1975.5 2189C2069.26 2291.39 2115.7 2322.62 2260.18 2405.75C2391.29 2481.17 2458.99 2503.56 2625.28 2535.05C3014.9 2608.85 3485.87 2397.72 3947.52 2401.73C4439.84 2406.02 4962.88 2475.72 5633.5 2690.03C5757.5 2730.35 6067.5 2841.8 6315.5 2965"
           stroke="url(#paint12_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="-12.16800000000012"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="-12.16800000000012"
         ></path>
         <path
           d="M5801.36 2406.29C5003.06 2192.09 4429.51 2190.2 3947.94 2259.67C3492.38 2325.4 3020.59 2595.76 2617.81 2502.17C2451.94 2463.62 2378.26 2437.41 2259.88 2334.21C2141.5 2231 2003.5 2049 2003.5 2049C1965 1993.67 1875.1 1844.7 1823.5 1691.5"
           stroke="url(#paint13_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="12.143999999999323"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="12.143999999999323"
         ></path>
         <path
           d="M6306.5 2242C6106.5 2167.2 5998.32 2131.17 5969.23 2122.51V2122.49C5043.21 1908.44 4419.35 1982.13 3948.36 2117.57C3499.1 2246.75 3026.09 2583.22 2610.35 2469.25C2444.84 2423.89 2330.29 2333.14 2259.59 2262.67C2188.89 2192.21 2084.17 2046 2056.5 1996C2028.83 1946 1965 1850.5 1887.5 1420.5"
           stroke="url(#paint14_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="12.11999999999989"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="12.11999999999989"
         ></path>
         <path
           d="M6307 1886.5C6215.5 1858 6156.07 1842.48 6137.1 1838.72C5083.39 1624.8 4409.6 1774.52 3948.78 1975.51C3506.2 2168.53 3031.33 2571.23 2602.89 2436.38C2437.66 2384.37 2326.83 2275.33 2259.29 2191.13C2191.75 2106.93 2111 1960.5 2111 1960.5C2085.83 1912 2010.9 1693.8 1980.5 1419"
           stroke="url(#paint15_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="12.11999999999989"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="12.11999999999989"
         ></path>
         <path
           d="M6305 1554.93C5123.59 1341.13 4400.35 1567.08 3949.21 1833.42C3513.75 2090.51 3036.29 2559.71 2595.44 2403.47C2430.35 2344.96 2323.36 2217.51 2259 2119.59C2194.64 2021.67 2156.5 1927 2156.5 1927C2135 1874.5 2088.5 1665 2084.5 1419"
           stroke="url(#paint16_linear_27413_564)"
-          stroke-miterlimit="10"
-          stroke-dasharray="12 12"
-          stroke-dashoffset="12.11999999999989"
+          strokeMiterlimit="10"
+          strokeDasharray="12 12"
+          strokeDashoffset="12.11999999999989"
         ></path>
         <path
           d="M-0.5 3076C58.1191 3058.86 1998.4 2876.53 2223.7 2855.87C2372.54 2828.14 2487.84 2804.85 2548.91 2807.99C2891.96 2824.62 3150.9 2728.36 3652.99 2776.74C3978.71 2776.74 4411.98 2766.16 4739.74 2807.99C4921.35 2831.16 5018.47 2855.87 5229.08 2855.87C5350.4 2855.87 6188.18 3006.29 6309.5 3033.5"
           stroke="#FF00D5"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M6580.5 2735C6484.31 2681.15 5620 2428.55 5511.5 2396.5C5098.5 2274.5 4658.5 2338 4211 2280C3857.37 2234.17 3174 2444.5 2756.5 2517C2586.05 2546.6 2527.37 2354.18 2410.5 2252C2208.94 2075.77 2007.38 253.288 2074 279"
           stroke="#9500FF"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M2138.5 214C2100.52 252.105 2259.41 1960.09 2294 1974C2328.59 1987.91 2404.5 2323.5 2501 2409.5C2597.5 2495.5 2602 2467.5 2766 2499.5C3156.5 2452 3693 2130.5 4155 2155C4690.5 2155 5229.5 2048 5797.5 2219.5C6026.5 2247 6330 2294.5 6545.5 2397.5"
           stroke="#00F70C"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M6442 2088C5862.5 1843.5 4600.5 1945.5 4098.5 1990C3596.5 2034.5 3260.5 2336.5 2854.5 2454C2645.71 2456.54 2502.01 2354.48 2433.5 2268C2354.83 2168.7 2314.5 2149 2280.5 1990C2261.47 1901.03 2208.5 125 2183.5 35.5"
           stroke="#006AFF"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M6483 1894C5684.68 1679.82 4712.72 1804 4138 1894C3682.22 1992.5 3096.78 2523.09 2694 2429.5C2528.13 2390.95 2464.5 2330.5 2401.5 2212C2338.5 2093.5 2299.5 1894 2299.5 1894C2261 1838.67 2230.6 200.7 2179 47.5"
           stroke="#FFFB00"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M6564 1618.5C6564 1618.5 6411 1576 6148 1522C5221.97 1307.95 4545.49 1607.56 4074.5 1743C3702.35 1890.71 3261.4 2343.15 2686 2396.5C2520.49 2351.14 2426 2280.5 2387 2177C2348 2073.5 2298.67 1945 2271 1895C2243.33 1845 2173.5 469 2173.5 37.5"
           stroke="#FF5D00"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M6635 1310C6543.5 1281.5 6270 1220 6214 1220C5160.29 1006.07 4481 1346.28 4040.5 1584C3632.5 1741.28 3250.5 2180.5 2665 2344C2495.33 2391.38 2457.04 2144.2 2389.5 2060C2321.96 1975.8 2313.5 1788.5 2313.5 1788.5C2291.5 1720 2278.72 268.698 2263.5 24"
           stroke="#FF0000"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
         <path
           d="M6692.5 995.5C5511.08 781.7 4379.85 1262.08 3928.71 1528.42C3493.25 1785.51 3090 2168.5 2653 2297.5C2423 2297.5 2318 2044.91 2278.5 1877C2239 1709.09 2215.5 27 2215.5 27"
           stroke="red"
-          stroke-miterlimit="10"
-          stroke-opacity="0"
+          strokeMiterlimit="10"
+          strokeOpacity="0"
         ></path>
       </g>
       <defs>
@@ -158,10 +158,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2467.029052734375 2229.626220703125) rotate(112.277) scale(1100 910)"
         >
-          <stop offset="0.137857" stop-color="#FFE88E"></stop>
-          <stop offset="0.398078" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.137857" stopColor="#FFE88E"></stop>
+          <stop offset="0.398078" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint1_radial_27413_564"
@@ -171,10 +171,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2333.880859375 1929.3594970703125) rotate(117.537) scale(1100 910)"
         >
-          <stop offset="0.146641" stop-color="#FFE88E"></stop>
-          <stop offset="0.41295" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.146641" stopColor="#FFE88E"></stop>
+          <stop offset="0.41295" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint2_radial_27413_564"
@@ -184,10 +184,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2278.782958984375 1909.9522705078125) rotate(90.7215) scale(1100 910)"
         >
-          <stop offset="0.0650809" stop-color="#FFE88E"></stop>
-          <stop offset="0.310628" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="0.819692" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.0650809" stopColor="#FFE88E"></stop>
+          <stop offset="0.310628" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="0.819692" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint3_radial_27413_564"
@@ -197,10 +197,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2274.4306640625 1651.564208984375) rotate(128.591) scale(1100 910)"
         >
-          <stop offset="0.0593665" stop-color="#FFE88E"></stop>
-          <stop offset="0.373032" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.0593665" stopColor="#FFE88E"></stop>
+          <stop offset="0.373032" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint4_radial_27413_564"
@@ -210,10 +210,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2257.2958984375 1578.568359375) rotate(124.493) scale(1100 910)"
         >
-          <stop offset="0.314762" stop-color="#FFE88E"></stop>
-          <stop offset="0.442636" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.314762" stopColor="#FFE88E"></stop>
+          <stop offset="0.442636" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint5_radial_27413_564"
@@ -223,10 +223,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2223.12255859375 1455.53662109375) rotate(122.42) scale(1100 910)"
         >
-          <stop offset="0.234007" stop-color="#FFE88E"></stop>
-          <stop offset="0.373032" stop-color="#FB9CE5"></stop>
-          <stop offset="0.750002" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.234007" stopColor="#FFE88E"></stop>
+          <stop offset="0.373032" stopColor="#FB9CE5"></stop>
+          <stop offset="0.750002" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint6_radial_27413_564"
@@ -236,10 +236,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(2143.84423828125 1204.91650390625) rotate(116.785) scale(1100 910)"
         >
-          <stop offset="0.178948" stop-color="#FFE88E"></stop>
-          <stop offset="0.332959" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="0.844528" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop offset="0.178948" stopColor="#FFE88E"></stop>
+          <stop offset="0.332959" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="0.844528" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <radialGradient
           id="paint7_radial_27413_564"
@@ -249,10 +249,10 @@ const WindsurfHeroBackground = () => (
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(691.6849365234375 3002.1005859375) rotate(115.165) scale(1100 910)"
         >
-          <stop stop-color="#FFE88E"></stop>
-          <stop offset="0.274411" stop-color="#FB9CE5"></stop>
-          <stop offset="0.721869" stop-color="#096FFF"></stop>
-          <stop offset="0.950179" stop-color="#011C42" stop-opacity="0"></stop>
+          <stop stopColor="#FFE88E"></stop>
+          <stop offset="0.274411" stopColor="#FB9CE5"></stop>
+          <stop offset="0.721869" stopColor="#096FFF"></stop>
+          <stop offset="0.950179" stopColor="#011C42" stopOpacity="0"></stop>
         </radialGradient>
         <linearGradient
           id="paint8_linear_27413_564"
@@ -262,9 +262,9 @@ const WindsurfHeroBackground = () => (
           y2="2647.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint9_linear_27413_564"
@@ -274,9 +274,9 @@ const WindsurfHeroBackground = () => (
           y2="2652.17"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint10_linear_27413_564"
@@ -286,9 +286,9 @@ const WindsurfHeroBackground = () => (
           y2="2647.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint11_linear_27413_564"
@@ -298,9 +298,9 @@ const WindsurfHeroBackground = () => (
           y2="3370.72"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint12_linear_27413_564"
@@ -310,9 +310,9 @@ const WindsurfHeroBackground = () => (
           y2="2921.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint13_linear_27413_564"
@@ -322,9 +322,9 @@ const WindsurfHeroBackground = () => (
           y2="2647.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint14_linear_27413_564"
@@ -334,9 +334,9 @@ const WindsurfHeroBackground = () => (
           y2="2647.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint15_linear_27413_564"
@@ -346,9 +346,9 @@ const WindsurfHeroBackground = () => (
           y2="2647.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <linearGradient
           id="paint16_linear_27413_564"
@@ -358,9 +358,9 @@ const WindsurfHeroBackground = () => (
           y2="2647.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#011C42"></stop>
-          <stop offset="0.344133" stop-color="#096FFF"></stop>
-          <stop offset="1" stop-color="#096FFF" stop-opacity="0"></stop>
+          <stop stopColor="#011C42"></stop>
+          <stop offset="0.344133" stopColor="#096FFF"></stop>
+          <stop offset="1" stopColor="#096FFF" stopOpacity="0"></stop>
         </linearGradient>
         <clipPath id="clip0_27413_564">
           <rect width="6635" height="3825" fill="white"></rect>
