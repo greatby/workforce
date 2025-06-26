@@ -1,5 +1,7 @@
 import React from "react";
-import WindsurfHeroBackground from "./HeroBg";
+import WavyBackground from "./HeroBg";
+
+
 
 // export default function HeroSection() {
 //   return (
@@ -57,8 +59,8 @@ import WindsurfHeroBackground from "./HeroBg";
 export default function Hero() {
   return (
     <section className="relative h-screen w-screen bg-[#011e3c] text-white overflow-hidden">
-      <WindsurfHeroBackground/>
-
+  
+    <WavyBackground/>
       {/* HERO CONTENT */}
       <div className="relative z-10 mx-auto mt-36 md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
         <div className="flex w-full flex-col gap-10 md:gap-16 md:max-w-5xl">

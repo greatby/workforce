@@ -13,18 +13,22 @@ export default function WindsurfNav() {
       label: "Products",
       dropdown: {
         PRODUCTS: [
-          { label: "Editor", desc: "The most powerful AI IDE" },
-          { label: "Plugins", desc: "AI in your IDE of choice" },
-          { label: "Reviews", desc: "Code reviews with AI" },
-        ],
-        "CORE FEATURES": [
-          { label: "Cascade", desc: "Agentic chat experience" },
-          { label: "Tab", desc: "More than just autocomplete" },
           {
-            label: "Cascade on JetBrains",
-            desc: "Cascade in your JetBrains IDE",
+            label: "EPFdesk",
+            desc: "EPFdesk makes PF easy for you.",
+            href: "https://epfdesk.com",
           },
+          // { label: "Plugins", desc: "AI in your IDE of choice" },
+          // { label: "Reviews", desc: "Code reviews with AI" },
         ],
+        // "CORE FEATURES": [
+        //   { label: "Cascade", desc: "Agentic chat experience" },
+        //   { label: "Tab", desc: "More than just autocomplete" },
+        //   {
+        //     label: "Cascade on JetBrains",
+        //     desc: "Cascade in your JetBrains IDE",
+        //   },
+        // ],
       },
     },
     {
@@ -46,19 +50,19 @@ export default function WindsurfNav() {
   ];
 
   useEffect(() => {
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 10); // adjust threshold if needed
-  };
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div
-     className={`fixed w-full z-50 transition-colors duration-300 ${
-    scrolled ? "bg-[#f9f3e9] text-black" : "bg-transparent text-white"
-  }`}
+      className={`fixed w-full z-50 transition-colors duration-300 ${
+        scrolled ? "bg-[#f9f3e9] text-black" : "bg-transparent text-white"
+      }`}
       onMouseLeave={() => setHoveredMenu(null)}
     >
       <nav className="flex items-center justify-between px-6 py-4">
@@ -76,8 +80,10 @@ export default function WindsurfNav() {
                 <a
                   href={link.href || "#"}
                   className={`flex items-center gap-1 px-2 py-1 text-sm font-semibold uppercase ${
-    scrolled ? "bg-[#f9f3e9] text-black" : "bg-transparent text-white"
-  }`}
+                    scrolled
+                      ? "bg-[#f9f3e9] text-black"
+                      : "bg-transparent text-white"
+                  }`}
                 >
                   {link.label}
                   {link.dropdown && (
@@ -115,6 +121,8 @@ export default function WindsurfNav() {
                                     <a
                                       key={i}
                                       href={item.href || "#"}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
                                       className="group rounded-sm transition-colors hover:bg-black/5 px-2 py-1 block"
                                     >
                                       <p className="text-sm font-semibold text-black">
@@ -193,12 +201,21 @@ export default function WindsurfNav() {
                             {Object.entries(link.dropdown).map(
                               ([title, items], idx) => (
                                 <div key={idx} className="mb-4">
-                                  <p className="text-xs font-semibold uppercase text-gray-500 mb-2">
+                                  {/* <p className="text-xs font-semibold uppercase text-gray-500 mb-2">
                                     {title}
-                                  </p>
+                                  </p> */}
                                   {items.map((item, i) => (
                                     <div key={i} className="mb-2">
-                                      <a className="block text-sm font-medium text-black">
+                                      <a
+                                        href={item.href || "#"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`${
+                                          scrolled
+                                            ? "bg-[#f9f3e9] text-black"
+                                            : "bg-transparent text-white"
+                                        } font-semibold uppercase`}
+                                      >
                                         {item.label}
                                       </a>
                                       <p className="text-xs text-gray-500">
@@ -215,8 +232,14 @@ export default function WindsurfNav() {
                     </div>
                   ) : (
                     <a
-                      href={link.href}
-                      className="text-sm font-semibold uppercase"
+                      href={item.href || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${
+                        scrolled
+                          ? "bg-[#f9f3e9] text-black"
+                          : "bg-transparent text-white"
+                      } font-semibold uppercase`}
                     >
                       {link.label}
                     </a>
