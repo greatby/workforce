@@ -1,76 +1,87 @@
-import React from "react";
-import AnimatedSVGBackground from "./HeroBg";
 
-
-
-
-// export default function HeroSection() {
-//   return (
-//     <section className="relative mx-auto h-[85vh] w-full xl:h-[65vh]">
-//       {/* Background */}
-//       <div className="absolute inset-0 z-[10] bg-[#F9F4F1] pb-20 pt-16"></div>
-
-//       {/* Content Container */}
-//       <div className="mx-auto h-full w-full max-w-7xl px-5">
-//         <div className="flex h-full pt-10 flex-col items-center justify-center">
-//           <div className="z-[40] flex flex-col items-start justify-center gap-8 xl:flex-row xl:items-start xl:justify-between">
-
-//             {/* Heading */}
-//             <h1 className="text-4xl md:text-5xl font-bold text-[#121212] whitespace-nowrap xl:flex-1">
-//               Built to Keep You <br /> in Flow State
-//             </h1>
-
-//             {/* Description + CTA */}
-//             <div className="z-[40] flex max-w-[550px] flex-col gap-12 xl:flex-1">
-//               <p className="text-base md:text-xl border-l-2 border-[#5A5A62] pl-2">
-//                 The first agentic IDE, and then some. The Windsurf Editor is where the work
-//                 of developers and AI truly flow together, allowing for a coding experience
-//                 that feels like literal magic.
-//               </p>
-
-//               <div className="z-10 flex flex-col items-center justify-between gap-8 xl:flex-row xl:gap-2">
-//                 <button className="inline-flex items-center justify-center gap-3 bg-[#34E8BB] text-black hover:bg-[#6ff2d1] font-medium text-base md:text-lg px-6 py-4 pr-5 rounded-[2px] w-full md:min-w-[15rem] md:w-fit">
-//                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-5 w-auto">
-//                     <path
-//                       d="M3.001 5.479L10.378 4.463V11.59H3L3.001 5.479ZM3.001 18.521L10.378 19.538V12.498H3L3.001 18.521ZM11.189 19.646L21.001 21V12.498H11.189V19.646ZM11.189 4.354V11.59H21.001V3L11.189 4.354Z"
-//                       fill="currentColor"
-//                     ></path>
-//                   </svg>
-//                   Download for Windows
-//                 </button>
-
-//                 <a
-//                   href="/editor/download#all-download-options"
-//                   className="text-[#137A6C] underline text-sm md:text-base hover:opacity-80 transition-opacity"
-//                 >
-//                   See all download options
-//                 </a>
-//               </div>
-
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
+  const gradientRef = useRef(null);
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  const target = useRef({ x: 0, y: 0 });
+  const pos = useRef({ x: 0, y: 0 });
+  const animationSpeed = 0.05; 
+  const fadeDelay = 500; 
+
+  useEffect(() => {
+    let raf;
+
+    const animate = () => {
+      pos.current.x += (target.current.x - pos.current.x) * animationSpeed;
+      pos.current.y += (target.current.y - pos.current.y) * animationSpeed;
+
+      if (gradientRef.current) {
+        gradientRef.current.style.background = `
+          radial-gradient(
+            600px circle at ${pos.current.x}px ${pos.current.y}px,
+            rgba(255, 228, 122, 0.8),
+            rgba(251, 156, 229, 0.6),
+            rgba(9, 111, 255, 0.5),
+            transparent 80%
+          )
+        `;
+      }
+
+      raf = requestAnimationFrame(animate);
+    };
+
+    animate();
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
+  const handleMouseMove = (e) => {
+    const rect = sectionRef.current.getBoundingClientRect();
+    target.current.x = e.clientX - rect.left;
+    target.current.y = e.clientY - rect.top;
+
+    if (!visible) setVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setTimeout(() => setVisible(false), fadeDelay);
+  };
+
   return (
-    <section className="relative h-screen w-screen bg-[#011e3c] text-white overflow-hidden">
-  
-  <div className="pointer-events-none absolute z-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 scale-[2] md:scale-[1.25] lg:scale-100"  style={{
-         width: '100%',
-    height: '100%',
-    backgroundImage: `url("/images/bg.png")`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-        }}></div>
-      {/* HERO CONTENT */}
-      <div className="relative z-10 mx-auto mt-36 md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
+    <section
+      ref={sectionRef}
+      className="relative h-screen w-screen bg-[#011e3c] text-white overflow-hidden"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      {/* Background Image */}
+      <div
+        className="pointer-events-none absolute z-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 scale-[2] md:scale-[1.25] lg:scale-100"
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url("/images/bg.png")`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      />
+
+      {/* Gradient Effect */}
+      <div
+        ref={gradientRef}
+        className="pointer-events-none absolute inset-0 z-10 transition-opacity duration-700"
+        style={{
+          opacity: visible ? 1 : 0,
+          mixBlendMode: "screen",
+          transition: "opacity 700ms ease",
+        }}
+      />
+
+      {/* Hero Content */}
+      <div className="relative z-20 mx-auto mt-36 md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
         <div className="flex w-full flex-col gap-10 md:gap-16 md:max-w-5xl">
           <h1 className="text-4xl md:text-6xl font-light leading-tight tracking-tight">
             Introducing <br /> the Windsurf Editor
@@ -107,3 +118,6 @@ export default function Hero() {
     </section>
   );
 }
+
+
+
