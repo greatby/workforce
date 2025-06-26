@@ -132,3 +132,16 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+// export default function Footer () {
+//   return (
+//     <div style={{ width: "1000px",
+//     height: "250px",
+//     background: "#ffffff38",
+//     color: "black",
+//     backdropFilter: "blur(19px)",
+//     borderRadius: "10px",
+//   margin:'auto'}}>hello</div>
+//   )
+// }

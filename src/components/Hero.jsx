@@ -1,5 +1,6 @@
 import React from "react";
-import WavyBackground from "./HeroBg";
+import AnimatedSVGBackground from "./HeroBg";
+
 
 
 
@@ -60,7 +61,14 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-screen bg-[#011e3c] text-white overflow-hidden">
   
-    <WavyBackground/>
+  <div className="pointer-events-none absolute z-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 scale-[2] md:scale-[1.25] lg:scale-100"  style={{
+         width: '100%',
+    height: '100%',
+    backgroundImage: `url("/images/bg.png")`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+        }}></div>
       {/* HERO CONTENT */}
       <div className="relative z-10 mx-auto mt-36 md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
         <div className="flex w-full flex-col gap-10 md:gap-16 md:max-w-5xl">

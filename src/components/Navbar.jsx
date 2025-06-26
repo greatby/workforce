@@ -44,7 +44,9 @@ export default function WindsurfNav() {
     {
       label: "Company",
       dropdown: {
-        COMPANY: [{ label: "About Us",href:'https://about-us-flame.vercel.app/' }, { label: "Careers" }],
+        COMPANY: [{ label: "About Us",href:'https://about-us-flame.vercel.app/' }, 
+          // { label: "Careers" }
+        ],
       },
     },
   ];
@@ -66,7 +68,7 @@ export default function WindsurfNav() {
       onMouseLeave={() => setHoveredMenu(null)}
     >
       <nav className="flex items-center justify-between px-6 py-4">
-        <div className="text-xl font-bold">WINDSURF</div>
+        <div className="text-xl font-bold">WORKFORCE</div>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex gap-6">
@@ -123,7 +125,7 @@ export default function WindsurfNav() {
                                       href={item.href || "#"}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="group rounded-sm transition-colors hover:bg-black/5 px-2 py-1 block"
+                                      className="group rounded-sm transition-colors hover:bg-black/5  py-1 block"
                                     >
                                       <p className="text-sm font-semibold text-black">
                                         {item.label}
@@ -200,12 +202,12 @@ export default function WindsurfNav() {
                           >
                             {Object.entries(link.dropdown).map(
                               ([title, items], idx) => (
-                                <div key={idx} className="mb-4">
+                                <div key={idx} className="">
                                   {/* <p className="text-xs font-semibold uppercase text-gray-500 mb-2">
                                     {title}
                                   </p> */}
                                   {items.map((item, i) => (
-                                    <div key={i} className="mb-2">
+                                    <div key={i} className="">
                                       <a
                                         href={item.href || "#"}
                                         target="_blank"
@@ -218,9 +220,9 @@ export default function WindsurfNav() {
                                       >
                                         {item.label}
                                       </a>
-                                      <p className="text-xs text-gray-500">
+                                      {/* <p className="text-xs text-gray-500">
                                         {item.desc}
-                                      </p>
+                                      </p> */}
                                     </div>
                                   ))}
                                 </div>
