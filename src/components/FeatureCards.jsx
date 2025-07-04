@@ -1,39 +1,39 @@
 import { useState, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import clsx from "clsx";
+import { HiClipboardList, HiUserGroup, HiChip, HiSparkles } from "react-icons/hi";
 
 const slides = [
   {
-    title: "Linter Integration",
+    title: "HR Compliance & Payroll",
     description:
-      "If Cascade generates code that doesn’t pass a linter, it will fix the errors automatically.",
-    image:
-      "/images/pexels-photo-29789465.jpeg",
-    icon: "/icons/linter.svg",
+      "Stay ahead of regulations, audits, and accuracy. We manage your compliance, so you can manage your business.",
+    image: "/images/pexels-photo-29789465.jpeg",
+    icon: HiClipboardList,
   },
   {
-    title: "Model Context Protocol (MCP)",
+    title: "Temp Staffing",
     description:
-      "Enhance your AI workflows by connecting to custom tools and services.",
-    image:
-      "/images/pexels-photo-32079860.jpeg",
-    icon: "/icons/mcp.svg",
+      "Onboard pre-vetted, high-performing talent at scale — the right people, right when you need them.",
+    image: "/images/pexels-photo-32079860.jpeg",
+    icon: HiUserGroup,
   },
   {
-    title: "Tab to Jump",
+    title: "HR Tech & Software",
     description:
-      "Predicts the next location of your cursor to seamlessly navigate through the file.",
-    image:
-      "/images/pexels-photo-30824935.jpeg",
-    icon: "/icons/tab.svg",
+      "We don’t just deliver HR services; we build the tools that power them. Custom apps and systems that automate, integrate, and elevate your HR function.",
+    image: "/images/pexels-photo-30824935.jpeg",
+    icon: HiChip,
   },
   {
-    title: "Supercomplete",
-    description: "Supercomplete analyzes what your next action might be.",
+    title: "AI Workforce Evolution",
+    description:
+      "Tomorrow’s workforce isn’t just human. We’re designing AI agents that automate decisionmaking, learning, and HR execution — at scale, with precision.",
     image: "/images/pexels-photo-29145098.jpeg",
-    icon: "/icons/supercomplete.svg",
+    icon: HiSparkles,
   },
 ];
+
 
 export default function CardSlider() {
   const [index, setIndex] = useState(0);
@@ -60,6 +60,9 @@ export default function CardSlider() {
 
   return (
     <section className="bg-[#001935] py-16">
+      <div className="w-full md:w-[50%] lg:w-50% mx-auto text-center mb-10">
+        <h1 className="text-white text-4xl">Our Core Offerings</h1>
+      </div>
       <div className="relative mx-auto max-w-7xl px-4">
         {/* Cards Wrapper */}
         <div className="overflow-hidden">
@@ -79,7 +82,7 @@ export default function CardSlider() {
               >
                 <div className="flex h-full flex-col justify-between rounded-md bg-[#FAF7F5]">
                   <div className="flex flex-col gap-4 p-5">
-                    <img src={slide.icon} alt="icon" className="h-6 w-6" />
+                    {slide.icon && <slide.icon className="h-6 w-6 text-[#001935]" />}
                     <p className="text-sm font-semibold text-gray-900">
                       {slide.title}
                     </p>

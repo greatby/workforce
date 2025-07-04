@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
@@ -8,8 +7,8 @@ export default function Hero() {
 
   const target = useRef({ x: 0, y: 0 });
   const pos = useRef({ x: 0, y: 0 });
-  const animationSpeed = 0.05; 
-  const fadeDelay = 500; 
+  const animationSpeed = 0.05;
+  const fadeDelay = 500;
 
   useEffect(() => {
     let raf;
@@ -84,40 +83,42 @@ export default function Hero() {
       <div className="relative z-20 mx-auto mt-36 md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
         <div className="flex w-full flex-col gap-10 md:gap-16 md:max-w-5xl">
           <h1 className="text-4xl md:text-6xl font-light leading-tight tracking-tight">
-            Introducing <br /> the Windsurf Editor
+            Empowering India's Workforce: <br /> From People to Pioneering AI
+            Agents
           </h1>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white max-w-3xl">
+            We're not just shaping HR; we're architecting the future of work
+            with cutting-edge software and intelligent AI.
+          </p>
 
           <div className="flex flex-col md:flex-row gap-4">
             <button className="inline-flex items-center gap-3 justify-center w-full md:w-fit md:min-w-[15rem] px-6 py-4 text-base md:text-lg font-medium text-black bg-[#00f5d4] hover:bg-[#5bf5de] transition rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:ring-[#00f5d4] focus-visible:ring-offset-[#00c8aa] disabled:opacity-30">
               <svg
-                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-auto"
-                fill="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+                className="h-5 w-5"
               >
-                <path d="M3.001 5.479L10.378 4.463V11.59H3L3.001 5.479ZM3.001 18.521L10.378 19.538V12.498H3L3.001 18.521ZM11.189 19.646L21.001 21V12.498H11.189V19.646ZM11.189 4.354V11.59H21.001V3L11.189 4.354Z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
-              Download for Windows
+              Discover the Future of HR
             </button>
-
-            <a href="/editor">
-              <button className="inline-flex items-center gap-3 justify-center w-full md:w-fit md:min-w-[15rem] px-6 py-4 text-base md:text-lg font-medium text-white border border-white/10 bg-white/10 backdrop-blur-sm hover:border-white/25 hover:bg-white/15 rounded-[2px] transition">
-                Explore Features
-              </button>
-            </a>
           </div>
 
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <div className="h-[6px] w-[6px] bg-[#00f5d4]" />
             <p className="text-sm md:text-base text-white/80">
               The new purpose-built IDE to harness magic
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
   );
 }
-
-
-

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
-export default function ImageHighlightBlock({ slides }) {
+export default function ImageHighlightBlock({ sectionData }) {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -20,10 +20,21 @@ export default function ImageHighlightBlock({ slides }) {
     if (index > 0) paginate(index - 1);
   };
 
+  const slides = sectionData.slides;
+
   const { title, description } = slides[index];
 
   return (
     <section className="w-full bg-gradient-to-br from-lime-100 via-cyan-100 to-yellow-100 px-4 py-16 overflow-hidden">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-0 max-w-3xl mx-auto mb-10 text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+        {sectionData.header}
+        </h1>
+        <p className="mt-4 text-base sm:text-lg text-gray-700">
+         {sectionData.subtext}
+        </p>
+      </div>
+
       <div className="mx-auto max-w-6xl flex flex-col gap-6">
         {/* Top Section */}
         <div className="flex flex-col justify-between md:flex-row md:items-start">
@@ -110,7 +121,6 @@ export default function ImageHighlightBlock({ slides }) {
             </motion.div>
           </AnimatePresence>
         </div>
-       
       </div>
     </section>
   );
