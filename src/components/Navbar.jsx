@@ -45,7 +45,7 @@ export default function WindsurfNav() {
       label: "Company",
       dropdown: {
         COMPANY: [{ label: "About Us",href:'https://about-us-flame.vercel.app/' }, 
-          // { label: "Careers" }
+          { label: "Jobs",href:'https://jobs-zeta-two.vercel.app/' }
         ],
       },
     },

@@ -8,7 +8,7 @@ const VisionSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="!text-gray-900 !text-3xl sm:!text-4xl !font-bold !leading-tight"
+          className="!text-gray-900 !text-3xl sm:!text-3xl !font-bold !leading-tight"
         >
           Beyond Traditional HR: Innovating for Tomorrow
         </motion.h2>
