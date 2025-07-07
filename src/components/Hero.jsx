@@ -80,7 +80,7 @@ export default function Hero() {
       />
 
       {/* Hero Content */}
-      <div className="relative z-20 mx-auto mt-36 md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
+      <div className="relative z-20 mx-auto md:mt-0 flex h-full w-full max-w-7xl flex-col items-start justify-center px-5">
         <div className="flex w-full flex-col gap-10 md:gap-16 md:max-w-5xl">
           <h1 className="text-4xl md:text-6xl font-light leading-tight tracking-tight">
             Empowering India's Workforce: <br /> From People to Pioneering AI

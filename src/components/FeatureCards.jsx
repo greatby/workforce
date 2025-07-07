@@ -114,7 +114,7 @@ export default function CardSlider() {
                 : "bg-white text-black hover:bg-gray-200"
             )}
           >
-            <FaChevronLeft className="h-5 w-5" />
+            <FaChevronLeft className="h-6 w-6" />
           </button>
           <button
             onClick={goNext}
@@ -126,7 +126,7 @@ export default function CardSlider() {
                 : "bg-white text-black hover:bg-gray-200"
             )}
           >
-            <FaChevronRight className="h-5 w-5" />
+            <FaChevronRight className="h-6 w-6" />
           </button>
         </div>
       </div>

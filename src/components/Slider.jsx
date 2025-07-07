@@ -67,7 +67,7 @@ export default function ImageHighlightBlock({ sectionData }) {
             <button
               onClick={prev}
               disabled={index === 0}
-              className={`rounded-full w-[32px] h-[32px] md:w-[64px] md:h-[64px] lg:w-[64px] lg:h-[64px] px-2 md:px-6 lg:px-6 transition-colors ${
+              className={`rounded-full w-[46px] h-[46px] md:w-[64px] md:h-[64px] lg:w-[64px] lg:h-[64px] px-4 md:px-6 lg:px-6 transition-colors ${
                 index === 0
                   ? "bg-transparent text-green-700 cursor-default"
                   : "bg-green-700 text-white hover:bg-green-800"
@@ -90,7 +90,7 @@ export default function ImageHighlightBlock({ sectionData }) {
             <button
               onClick={next}
               disabled={index === slides.length - 1}
-              className={`rounded-full w-[32px] h-[32px] md:w-[64px] md:h-[64px] lg:w-[64px] lg:h-[64px] px-2 md:px-6 lg:px-6 transition-colors ${
+              className={`rounded-full w-[46px] h-[46px] md:w-[64px] md:h-[64px] lg:w-[64px] lg:h-[64px] px-4 md:px-6 lg:px-6 transition-colors ${
                 index === slides.length - 1
                   ? "bg-transparent text-green-700 cursor-default"
                   : "bg-green-700 text-white hover:bg-green-800"

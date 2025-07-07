@@ -207,16 +207,16 @@ export default function WindsurfNav() {
                                     {title}
                                   </p> */}
                                   {items.map((item, i) => (
-                                    <div key={i} className="">
+                                    <div key={i} className="mb-1">
                                       <a
                                         href={item.href || "#"}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className={`${
                                           scrolled
-                                            ? "bg-[#f9f3e9] text-black"
-                                            : "bg-transparent text-white"
-                                        } font-semibold uppercase`}
+                                            ? "bg-[#f9f3e9] text-[#00000091]"
+                                            : "bg-transparent text-[#ffffff9e]"
+                                        } font-medium uppercase `}
                                       >
                                         {item.label}
                                       </a>

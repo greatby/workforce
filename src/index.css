@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body,html{
     overflow-x: hidden;
+    position: relative;
 }
 
 @keyframes moveStroke {
